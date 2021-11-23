@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Feedback form</title>
+</head>
+<body>
+    <h1>Feedback form</h1>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            <div>
+                <form action="read.php" method="POST">
+                <div class="form-group">
+                  <label for="Name">Name</label>
+                  <input name="Name" type="text" class="form-control" id="Name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input name="Email"type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="Textarea">Feedback</label>
+                    <textarea name="Feedback" class="form-control" id="Feedback" rows="5" placeholder="Feedback"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark"  >Submit</button>
+                <a href="wiew.php" class="btn btn-dark">Other Feedback</a>
+                <button type="button" class="btn btn-primary" onclick="notFilled()">Primary</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+        </div>
+      </div>
+</body>
+</html>
